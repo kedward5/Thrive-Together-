@@ -1,0 +1,12 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+<script type='text/javascript'>    
+  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1KsK7AFR-Iv13KCB23WaQMigcLlUyaz4rZ_5wD_FywW0/edit?usp=sharing'
+
+function init() {
+Tabletop.init( { key: ‘1KsK7AFR-Iv13KCB23WaQMigcLlUyaz4rZ_5wD_FywW0',
+callback: function(data, tabletop) {
+console.log(data)
+},
+simpleSheet: true } )
+}
+window.addEventListener(‘DOMContentLoaded’, init)
